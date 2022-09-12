@@ -1,0 +1,11 @@
+server:
+  port: 1314        # 端口号,eureka本身也是一个微服务
+spring:
+  application:
+    name: eurekaServer        #eureka的服务名称
+eureka:
+  client:
+    service-url:        #eureka的注册信息，eureka要把自己也注册到注册中心里，如果有多个，则http://localhost:1314/eureka1,http://localhost:1314/eureka2
+      defaultZone: http://127.0.0.1:1314/eureka
+  server:
+    ebavke-self-preservation: false

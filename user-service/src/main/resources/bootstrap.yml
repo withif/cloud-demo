@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      config:
+#        enabled: false  #这个配置就不会读取localhost:8848了
+        file-extension: yaml
+        server-addr: 192.168.142.128:8848
+      discovery:
+        server-addr: 192.168.142.128:8848
+#        namespace: 189a9cb5-d2d4-4cff-9478-8f170e56fe67
+  application:
+    name: userservice
+  profiles:
+    active: dev
